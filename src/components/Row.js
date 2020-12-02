@@ -15,7 +15,6 @@ function Row({title,fetchUrl,isLargeRow}) {
         }
         fetchData()
     },[fetchUrl]) //for run several time
-console.log(movies)
     return (
         <div className="row">
             <h2>{title}</h2>
@@ -23,7 +22,7 @@ console.log(movies)
                 {movies.map(movie =>( //array to single data convert
                     <img
                         key={movie.id}
-                        className="row__poster"
+                        className={`row__poster ${isLargeRow && "row__poster__large"}`}
                         src={`${base_URL}${isLargeRow?movie.poster_path:movie.backdrop_path}`}
                         alt={movie.name}
                     />
