@@ -8,6 +8,7 @@
     overflow-x: scroll;
     padding: 20px;
 }
+
 .row__posters::-webkit-scrollbar{
     display: none;
 }
@@ -21,6 +22,7 @@
 .row__poster:hover{
     transform: scale(1.08);
 }
+
 .row__poster__large{
     max-height: 280px;
 }

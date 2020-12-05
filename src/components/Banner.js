@@ -17,7 +17,6 @@ function Banner(props) {
                     ]);
             return request
         }
-
         fetchdata()
     },[])
 
